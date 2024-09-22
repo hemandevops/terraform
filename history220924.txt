@@ -1,0 +1,26 @@
+    1  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+    2  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+    3  sudo apt update && sudo apt install terraform -y
+    4  terrform --version
+    5  terraform --version
+    6  mkdir exercise1
+    7  cd exercise1/
+    8  ls
+    9  vimmain.tf
+   10  vim main.tf
+   11  terraform init
+   12  terraform validate
+   13  terraform plan
+   14  terraform apply
+   15  terraform destroy
+   16  history
+   17  cd ..
+   18  ls
+   19  ssh-keygen -t rsa
+   20  cat .ssh/id_rsa.pub
+   21  git clone git@github.com:hemandevops/terraform.git
+   22  ls
+   23  mv exercise1/ terraform/
+   24  cd terraform/
+   25  ls
+   26  history > history220924.txt
