@@ -1,0 +1,67 @@
+    1  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+    2  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+    3  sudo apt update && sudo apt install terraform -y
+    4  terrform --version
+    5  terraform --version
+    6  mkdir exercise1
+    7  cd exercise1/
+    8  ls
+    9  vimmain.tf
+   10  vim main.tf
+   11  terraform init
+   12  terraform validate
+   13  terraform plan
+   14  terraform apply
+   15  terraform destroy
+   16  history
+   17  cd ..
+   18  ls
+   19  ssh-keygen -t rsa
+   20  cat .ssh/id_rsa.pub
+   21  git clone git@github.com:hemandevops/terraform.git
+   22  ls
+   23  mv exercise1/ terraform/
+   24  cd terraform/
+   25  ls
+   26  history > history220924.txt
+   27  ls
+   28  ls -a exercise1/
+   29  cd exercise1/
+   30  ls
+   31  cat terraform.tfstate
+   32  ls -a
+   33  cd ..
+   34  git branch
+   35  vim .gitignore
+   36  git add .
+   37  git commit -m "Exercise 1 - Creating S3 Bucket in Terraform"
+   38  git push
+   39  history
+   40  ls
+   41  cd terraform/
+   42  ls
+   43  cp -r exercise1/ exercise2
+   44  ls
+   45  cd exercise2/
+   46  ls
+   47  vim main.tf
+   48  ls
+   49  vim provider.tf
+   50  ls
+   51  vim vars.tf
+   52  vim provider.tf
+   53  vim main.tf 
+   54  vim provider.tf
+   55  cat vars.tf
+   56  cat provider.tf 
+   57  terraform init
+   58  vim main.tf 
+   59  terraform fmt
+   60  vim main.tf 
+   61  terraform validate
+   62  terraform plan
+   63  terraform apply
+   64  terraform destroy
+   65  ls
+   66  cd ..
+   67  history > history240924.txt
